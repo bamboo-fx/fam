@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd backend && bun install && bunx prisma generate",
+  "devCommand": "cd backend && bun run dev",
+  "installCommand": "cd backend && bun install",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index.ts"
+    }
+  ]
+}
